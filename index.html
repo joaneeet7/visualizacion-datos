@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Joan Amengual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            width: 40%; /* Ajusta el ancho del contenedor para dos imágenes por fila */
+            background-color: #f5f5f5;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 16px; /* Reduce el tamaño de fuente para los títulos */
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            width: 100%; /* Ajusta el ancho de las imágenes para ocupar todo el espacio del contenedor */
+            height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
+            border-radius: 5px;
+            cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima de la imagen */
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .image-container {
+                width: 100%; /* En pantallas más pequeñas, mostrar una imagen por fila */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard - Joan Amengual</h1>
+
+    <div class="row">
+        <div class="image-container">
+            <h2>¿Cuál es la distribución de películas y programas de televisión por país de origen?</h2>
+            <a href="images/q1.png" target="_blank">
+                <img src="images/q1.png" alt="Imagen 1">
+            </a>
+        </div>
+
+        <div class="image-container">
+            <h2>¿Cuál es la evolución temporal de la cantidad de películas y programas de televisión agregados a Netflix?</h2>
+            <a href="images/q2.png" target="_blank">
+                <img src="images/q2.png" alt="Imagen 2">
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <h2>¿Cuál es la proporción de películas y programas de televisión por clasificación de contenido (rating)?</h2>
+            <a href="images/q3.png" target="_blank">
+                <img src="images/q3.png" alt="Imagen 3">
+            </a>
+        </div>
+
+        <div class="image-container">
+            <h2>¿Cuál es la relación entre la duración de una película o programa de televisión y su clasificación de contenido</h2>
+            <a href="images/q4.png" target="_blank">
+                <img src="images/q4.png" alt="Imagen 4">
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <h2>¿Cuál es la tendencia temporal de la cantidad de películas y programas de televisión en diferentes géneros?</h2>
+            <a href="images/q5.png" target="_blank">
+                <img src="images/q5.png" alt="Imagen 5">
+            </a>
+        </div>
+
+        <div class="image-container">
+            <h2>¿Cómo se distribuye el elenco de actores y actrices en diferentes países?</h2>
+            <a href="images/q6.png" target="_blank">
+                <img src="images/q6.png" alt="Imagen 6">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
