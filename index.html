@@ -37,6 +37,11 @@
             height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
             border-radius: 5px;
             cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima de la imagen */
+            transition: transform 0.3s; /* Agrega una transición suave al realizar el zoom */
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Zoom en la imagen al pasar el cursor sobre ella */
         }
 
         .row::after {
@@ -103,5 +108,16 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/panzoom@latest/dist/panzoom.min.js"></script>
+    <script>
+        const images = document.querySelectorAll('.image-container img');
+        images.forEach(image => {
+            const panzoomInstance = panzoom(image, {
+                maxScale: 2, // Cambia el valor para ajustar el nivel de zoom máximo
+                contain: 'inside'
+            });
+            panzoomInstance.pause(); // Hace que la interacción inicial esté en pausa
+        });
+    </script>
 </body>
 </html>
